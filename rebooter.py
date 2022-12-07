@@ -13,7 +13,8 @@ else:
     print("plink is not installed")
     print("run winget putty.putty to install it from terminal")
     exit
-ssh_tunnel = pexpect.popen_spawn.PopenSpawn('plink ubnt@192.168.1.60 -pw ubnt -batch', encoding='utf-8')
+    
+ssh_tunnel = pexpect.popen_spawn.PopenSpawn('plink username@IPADDRESS -pw password -batch', encoding='utf-8')
 time.sleep(5)
 ssh_tunnel.sendline('reboot')
 time.sleep(5)
