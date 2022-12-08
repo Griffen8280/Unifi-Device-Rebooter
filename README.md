@@ -6,7 +6,7 @@ This project started after I couldn't find a decent way to automatically reboot 
 
 ## Requirements
 A requirements.txt is included with this file which you can run with:  
-`pip install -r requirements.txt`
+`pip install -r requirements.txt`  
 Also you will need plink (putty module) for this to work correctly, to install this run:  
 `winget install putty.putty`
 
