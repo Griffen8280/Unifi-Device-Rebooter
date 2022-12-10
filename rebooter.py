@@ -11,7 +11,7 @@ if shutil.which("plink") != None:
     print("plink is installed")
 else:
     print("plink is not installed")
-    print("run winget putty.putty to install it from terminal")
+    print("run winget install putty.putty to install it from terminal")
     exit
     
 ssh_tunnel = pexpect.popen_spawn.PopenSpawn('plink username@IPADDRESS -pw password -batch', encoding='utf-8')
